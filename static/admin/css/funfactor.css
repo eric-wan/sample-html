@@ -1,0 +1,47 @@
+.play-btn{
+    background:url(/static/admin/img/btn_up.png) no-repeat;
+    background-size: 100%;
+    background-size: 116px auto;
+    cursor:pointer;
+    border:none;
+    width: 116px;
+    height: 52px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.play-btn:hover {
+    background:url(/static/admin/img/btn_over.png) no-repeat;
+    background-size: 100%;
+    background-size: 116px auto;
+    color: #ffffff;
+}
+
+.coming_soon {
+    color: yellow;
+    font-size: 20px;
+}
+
+.about_divider_1 {
+    background-color: #c2fcff;
+    border-top: 3px solid #fffac2;
+    height: 10px;
+}
+
+.about_divider_2 {
+    background-color: #ffc2c2;
+    height: 20px;
+}
+
+#about_section {
+    background-color: #fffddb;
+}
+
+@media (min-width: 576px) {
+    .navbar-brand img {
+        height: 72px;
+    }
+
+
+}

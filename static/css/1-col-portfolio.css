@@ -3,27 +3,12 @@
  * Copyright 2013-2017 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-1-col-portfolio/blob/master/LICENSE)
  */
-
-body {
-  padding-top: 54px;
-}
-
-@media (min-width: 992px) {
-  body {
-    padding-top: 56px;
-  }
-}
-
-#ff-content .bg-dark {
-  background-color: #26bfa3 !important;
+.navbar-light .nav-link {
+  color: #1999d9 !important;
 }
 
 .nav-link {
-  color: #ffffff;
-  font-size: 25px;
-}
-
-.nav-item.active .nav-link {
+  color: #1999d9;
   font-size: 30px;
 }
 
@@ -32,11 +17,13 @@ h3.game-title {
   font-size: 28px;
 }
 
-.container h1.my-4 {
+.container h1 {
   text-align: center;
   color: #d50b23;
-  font-size: 37px;
-  margin-top: 4rem!important;
+}
+
+.ff-bg {
+  background-color: #1999d9;
 }
 
 .pagination {
