@@ -44,8 +44,8 @@
     </nav>
 
     <!-- Page Content -->
-    <div class="container">
-      <div id="home_section" class="carousel slide" data-bs-ride="carousel">
+    <div class="container" id="home_section">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -67,9 +67,11 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
+    </div>
 
       <!-- Page Heading -->
-      <h1 id="games_section" class="my-4">Our Games
+    <div class="container" id="games_section">
+      <h1 class="my-4">Our Games
       </h1>
 
       <!-- Project One -->
@@ -120,16 +122,15 @@
         </div>
       </div>
       <!-- /.row -->
-
-      <div class="about_divider_1"></div>
-      <div class="about_divider_2"></div>
-      <div id="about_section">
-        <h1>We find the fun factor</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, temporibus, dolores, at, praesentium ut unde repudiandae voluptatum sit ab debitis suscipit fugiat natus velit excepturi amet commodi deleniti alias possimus!</p>
-      </div>
-
     </div>
-    <!-- /.container -->
+
+    <div class="container about_divider_1"></div>
+    <div class="container about_divider_2"></div>
+    <div class="container" id="about_section">
+      <h1>We find the fun factor</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, temporibus, dolores, at, praesentium ut unde repudiandae voluptatum sit ab debitis suscipit fugiat natus velit excepturi amet commodi deleniti alias possimus!</p>
+    </div>
+
 
     <!-- Footer -->
     <footer class="py-5 ff-bg">
