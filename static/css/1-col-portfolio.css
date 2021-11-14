@@ -7,9 +7,13 @@
   color: #1999d9 !important;
 }
 
+.navbar-light {
+  background-color: white;
+}
+
 .nav-link {
   color: #1999d9;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 h3.game-title {
@@ -28,4 +32,8 @@ h3.game-title {
 
 .pagination {
   margin-bottom: 15px;
+}
+
+p {
+  color: #4c4c4c;
 }

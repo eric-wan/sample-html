@@ -1,41 +1,80 @@
 .play-btn{
     background:url(/static/admin/img/btn_up.png) no-repeat;
     background-size: 100%;
-    background-size: 116px auto;
+    background-size: 280px 100px;
     cursor:pointer;
     border:none;
-    width: 116px;
-    height: 52px;
+    width: 280px;
+    height: 100px;
     text-transform: uppercase;
     color: #ffffff;
     font-weight: bold;
+    font-size: 20px;
+}
+
+.play-btn{
+    background-size: 100%;
+    background-size: 140px 50px;
+    width: 140px;
+    height: 50px;
+
 }
 
 .play-btn:hover {
     background:url(/static/admin/img/btn_over.png) no-repeat;
     background-size: 100%;
-    background-size: 116px auto;
+    background-size: 140px 50px;
+    color: #ffffff;
+}
+
+.game-row {
+    margin-bottom: 4em;
+}
+
+.game-desc {
+    text-align: center;
+}
+
+.play-btn:hover {
+    background:url(/static/admin/img/btn_over.png) no-repeat;
+    background-size: 100%;
+    background-size: 280px 100px;
     color: #ffffff;
 }
 
 .coming_soon {
-    color: yellow;
+    color: #f4c23f;
     font-size: 20px;
+    font-weight: bold;
 }
 
 .about_divider_1 {
-    background-color: #c2fcff;
-    border-top: 3px solid #fffac2;
-    height: 10px;
+    background-color: #f4c23f;
+    height: 12px;
 }
 
 .about_divider_2 {
-    background-color: #ffc2c2;
-    height: 20px;
+    background-color: #1999d9;
+    height: 25px;
 }
 
 #about_section {
-    background-color: #fffddb;
+    background-color: #ffffff;
+}
+
+#about_section h1 {
+    margin-top: 0.5rem;
+}
+
+h5 {
+    color: #1999d9;
+    margin-top: 1em;
+}
+
+.nav-item.active .nav-link {
+    color: #d50b23 !important;
+    font-size: 30px;
+    font-weight: bold;
 }
 
 @media (min-width: 576px) {
@@ -43,5 +82,22 @@
         height: 72px;
     }
 
+    .play-btn{
+        background-size: 100%;
+        background-size: 280px 100px;
+        width: 280px;
+        height: 100px;
+        font-size: 37px;
+    }
 
+    .play-btn:hover {
+        background:url(/static/admin/img/btn_over.png) no-repeat;
+        background-size: 100%;
+        background-size: 280px 100px;
+        color: #ffffff;
+    }
+
+    .coming_soon {
+        font-size: 37px;
+    }
 }
