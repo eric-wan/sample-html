@@ -103,7 +103,7 @@
       <div class="game-row row justify-content-center">
         <div class="col-sm-5 order-xs-0 order-1 game-desc my-auto col-10">
           <div class="row"><h3 class="game-title">Merge Planes Idle Tycoon</h3></div>
-          <div class="row justify-content-center"><div class="col-sm-8 d-flex justify-content-center"><p>Create your airline empire by merging planes! </p></div></div>
+          <div class="row justify-content-center"><div class="col-sm-8 d-flex justify-content-center"><p>Create your airline empire by merging planes! Maximize your income by managing the right combo of planes. Invest to merge and unlock the best planes. Reach space after you have unlocked the highest level plane!</p></div></div>
           <div class="row justify-content-center"><div class="coming_soon">Coming Soon</div></div>
         </div>
         <div class="col-sm-5 order-sm-1 order-0 col-10">
@@ -125,7 +125,7 @@
         </div>
         <div class="col-sm-5 col-push-5 game-desc my-auto col-10">
           <div class="row"><h3 class="game-title">2048 Bubble Shooter</h3></div>
-          <div class="row justify-content-center"><div class="col-sm-8 d-flex justify-content-center"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, temporibus, dolores, at, praesentium ut unde repudiandae voluptatum sit ab debitis suscipit fugiat natus velit excepturi amet commodi deleniti alias possimus!</p></div></div>
+          <div class="row justify-content-center"><div class="col-sm-8 d-flex justify-content-center"><p>Two classic games you love rolled into one, reimagined! Challenging levels with boosts test your problem solving skills. Interesting puzzles that change every level. Reach 2048 for extra bonus explosion! Collaborate with your friends and send each other gifts.</p></div></div>
           <div class="row justify-content-center"><div class="coming_soon">Coming Soon</div></div>
         </div>
       </div>
@@ -135,28 +135,28 @@
     <div class="container about_divider_1"></div>
     <div class="container about_divider_2"></div>
     <div class="container" id="about_section">
-      <h1>We find the fun factor</h1>
+      <h1>We make the fun factor in everyday lives</h1>
       <div class="row justify-content-center">
         <div class="col-sm-8 col-10 text-center">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, temporibus, dolores, at, praesentium ut unde repudiandae voluptatum sit ab debitis suscipit fugiat natus velit excepturi amet commodi deleniti alias possimus!</p>
+          <p>FunFactor games is a studio of passionate game developers. We strive to create accessible fun games, instantly delivered to devices of your choice. Whether it be phones, tablet, or desktops, there’s a FunFactor game you can play and enjoy without a minute with your friends.</p>
         </div>
       </div>
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-sm-4 order-0 text-center col-10">
-            <img src="/static/admin/img/FF_icon.png" height="60">
-            <h5>Our Team</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, temporibus, dolores, at, praesentium ut unde repudiandae voluptatum sit ab debitis suscipit fugiat natus velit excepturi amet commodi deleniti alias possimus!</p>
+            <img src="/static/admin/img/2021/gamepad-icon.png" height="60">
+            <h5>GamePlay Fun</h5>
+            <p>FunFactor strives to make all the games accessible, easy to learn, hard to master. Whether you have 30 seconds or 3 hours to spare, we will provide an engaging experience and make sure you get your dose of fun.</p>
           </div>
           <div class="col-sm-4 order-1 text-center col-10">
-            <img src="/static/admin/img/FF_icon.png" height="60">
-            <h5>Aim for the Best</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, temporibus, dolores, at, praesentium ut unde repudiandae voluptatum sit ab debitis suscipit fugiat natus velit excepturi amet commodi deleniti alias possimus!</p>
+            <img src="/static/admin/img/2021/team.png" height="60">
+            <h5>Social Fun</h5>
+            <p>Everything is better with friends! All the FunFactor games are full of activities you can do with your friends and fellow games! Whether it be leaderboards, groups, gifts, or drop-in rounds, there’s something you can enjoy with your friends.</p>
           </div>
           <div class="col-sm-4 order-2 text-center col-10">
-            <img src="/static/admin/img/FF_icon.png" height="60">
-            <h5>Our Team 3</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, temporibus, dolores, at, praesentium ut unde repudiandae voluptatum sit ab debitis suscipit fugiat natus velit excepturi amet commodi deleniti alias possimus!</p>
+            <img src="/static/admin/img/2021/arrow.png" height="60">
+            <h5>Instant Fun</h5>
+            <p>Got a minute in line for coffee or in a train? Don’t want to download a 1Gb app just to get some fun? With FunFactor’s HTML5 Instant Play technology, you can enjoy all our games no matter what devices you’re on within 3 seconds!</p>
           </div>
         </div>
       </div>
@@ -167,7 +167,7 @@
     <footer class="py-5 ff-bg">
       <div class="container text-white">
         <p class="m-0 text-center text-white">Copyright &copy; Fun Factor Games 2021</p>
-        <p class="m-0 text-center text-white"><a class="text-white" href="/static/tos.html">Terms of Service</a> | <a class="text-white" href="/static/tos.html">Contact Us</a></p>
+        <p class="m-0 text-center text-white"><a class="text-white" href="/static/tos.html">Terms of Service</a> | <a class="text-white" href="mailto:info@funfactor.games">Contact Us</a></p>
       </div>
       <!-- /.container -->
     </footer>
@@ -180,6 +180,11 @@
         $("a.nav-link").on('click', function (e) {
           $(".nav-item").removeClass('active');
           $(this).parent().addClass('active');
+          if (navigator.userAgentData.mobile) {
+            setTimeout(function() {
+              $('.navbar-collapse').collapse('toggle')
+            }, 400);
+          }
         });
       });
     </script>

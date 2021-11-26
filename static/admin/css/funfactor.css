@@ -77,7 +77,41 @@ h5 {
     font-weight: bold;
 }
 
+.navbar-light .navbar-toggler-icon {
+    background: url(/static/admin/img/2021/option.png) no-repeat;
+    background-size: 100%;
+    background-size: 30px 30px;
+}
+
+.navbar-light .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon{
+    background: url(/static/admin/img/2021/close.png) no-repeat;
+    background-size: 100%;
+    background-size: 30px 30px;
+}
+
+.navbar-collapse {
+    border-top: yellow 2px solid;
+}
+
+.navbar-collapse .nav-item {
+    text-align: right;
+}
+
+.navbar-collapse .nav-item.d-flex {
+    display: list-item !important;
+    align-items: normal !important;
+}
+
 @media (min-width: 576px) {
+    .navbar-collapse .nav-item.d-flex {
+        align-items: center!important;
+        display: flex!important;
+    }
+
+    .navbar-collapse {
+        border-top: none;
+    }
+
     .navbar-brand img {
         height: 72px;
     }
